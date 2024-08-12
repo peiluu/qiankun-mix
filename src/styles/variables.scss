@@ -1,0 +1,28 @@
+$sideMenuRowHeight: 40px;
+$bgColor: #e8ebed;
+$blueColor: #1b90ff;
+$greenColor: #44bec7;
+// 边框颜色
+$borderColor: #e4e7ed;
+// 页面绿色
+$primaryGreenColor: #00b390;
+$yellowColor: #fdc13b;
+$mainTextColor: #333333;
+
+// sidebar
+$menuText: #333333;
+$menuActiveText: #010102;
+$subMenuActiveText: #f4f4f5;
+
+$menuHover: #263445;
+
+$subMenuBg: #ffffff;
+$subMenuHover: linear-gradient(90deg, transparent, $bgColor, $bgColor);
+
+$sideBarWidth: 230px;
+$headerHeight: 50px;
+$tabHeight: 40px;
+$sideMenuHeight: calc(100% - #{$headerHeight} - #{$headerHeight});
+$containerPadding: 10px;
+$containerHeight: calc(100% - 20px);
+$containerHeightWithTab: calc(100% - #{$tabHeight} - 20px);

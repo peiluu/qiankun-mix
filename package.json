@@ -1,0 +1,93 @@
+{
+  "name": "element-pei-vue3",
+  "version": "0.0.4",
+  "description": "Vue3版本-自定义组件库",
+  "author": "pei_lu",
+  "scripts": {
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
+    "build:com": "rimraf componentsdist && npm rebuild node-sass && webpack --config ./webpack.components.js",
+    "build:css": "npx gulp sass",
+    "clean": "rimraf node_modules && npm cache clear --force",
+    "docs:dev": "vuepress dev docs --temp .temp",
+    "docs:build": "vuepress build docs",
+    "deploy": "bash deploy.sh",
+    "serve": "vite --host",
+    "dev": "vite --host",
+    "build": "vite build",
+    "build:dev": "vite build --mode dev",
+    "build:uat": "vite build --mode uat",
+    "build:prod": "vite build --mode prod",
+    "preview": "vite preview"
+  },
+  "main": "componentsdist/index.umd.js",
+  "files": [
+    "componentsdist",
+    "components"
+  ],
+  "dependencies": {
+    "axios": "^1.2.1",
+    "element-pei-vue3": "^0.0.3",
+    "element-plus": "2.2.27",
+    "js-cookie": "^3.0.1",
+    "moment": "^2.30.1",
+    "nprogress": "^0.2.0",
+    "pubsub-js": "^1.9.4",
+    "query-string": "^8.1.0",
+    "unplugin-icons": "^0.18.5",
+    "vue": "^3.0.0",
+    "vue-class-component": "^8.0.0-0",
+    "vue-i18n": "9",
+    "vue-router": "^4.0.0",
+    "vuepress": "^1.9.9",
+    "vuex": "^4.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@types/node": "^20.11.24",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "@vitejs/plugin-vue": "^1.6.1",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "@vue/eslint-config-typescript": "^9.1.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "postcss-loader": "^7.0.2",
+    "sass": "^1.71.1",
+    "typescript": "~4.5.5",
+    "unplugin-auto-import": "^0.17.5",
+    "unplugin-element-plus": "^0.8.0",
+    "unplugin-vue-components": "^0.26.0",
+    "vite": "^5.1.4",
+    "vue-loader": "16.5.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended",
+      "@vue/typescript"
+    ],
+    "parserOptions": {
+      "parser": "@typescript-eslint/parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "keywords": [
+    "Vue自定义demo",
+    "vue",
+    "vue3",
+    "ui"
+  ]
+}

@@ -1,0 +1,67 @@
+$blue: #324157;
+$light-blue: #3a71a8;
+$red: #c03639;
+$pink: #e65d6e;
+$green: #30b08f;
+$tiffany: #4ab7bd;
+$yellow: #fec171;
+$panGreen: #30b08f;
+//sidebar
+$menuBg: #fafafa;
+$subMenuBg: #fafafa;
+$menuHover: #473c8b;
+$sideMenuRowHeight: 40px;
+$bgColor: #e8ebed;
+$blueColor: #1b90ff;
+$greenColor: #44bec7;
+// 边框颜色
+$borderColor: #e4e7ed;
+// 页面绿色
+$primaryGreenColor: #00b390;
+$yellowColor: #fdc13b;
+$mainTextColor: #333333;
+
+// sidebar
+$menuText: #333333;
+$menuActiveText: #010102;
+$subMenuActiveText: #f4f4f5;
+
+$menuHover: #263445;
+
+$subMenuBg: #ffffff;
+$subMenuHover: linear-gradient(90deg, transparent, $bgColor, $bgColor);
+
+$sideBarWidth: 230px;
+$headerHeight: 50px;
+$tabHeight: 40px;
+$sideMenuHeight: calc(100% - #{$headerHeight} - #{$headerHeight});
+$containerPadding: 10px;
+$containerHeight: calc(100% - 20px);
+$containerHeightWithTab: calc(100% - #{$tabHeight} - 20px);
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+ @mixin scrollBar {
+//   &::-webkit-scrollbar-track-piece {
+//     background: #d3dce6;
+//   }
+//   &::-webkit-scrollbar {
+//     width: 6px;
+//   }
+//   &::-webkit-scrollbar-thumb {
+//     background: #99a9bf;
+//     border-radius: 20px;
+//   }
+ }
+
+@mixin relative {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
