@@ -16,7 +16,7 @@
     "baseUrl": ".",
     // "ignoreDeprecations": "5.0",
     // "suppressImplicitAnyIndexErrors": true,
-    "types": ["webpack-env"],
+    // "types": ["webpack-env"],
     "paths": {
       "@/*": ["src/*"]
     },
